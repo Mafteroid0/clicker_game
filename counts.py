@@ -7,3 +7,6 @@ class Stats():
         with open("score.txt", "r") as f:
             self.score = int(f.readline())
 
+        self.maingame = True
+        self.shop = False
+

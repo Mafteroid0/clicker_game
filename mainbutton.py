@@ -12,3 +12,4 @@ class MainButton():
     def draw(self):
         """вывод кнопки на экран"""
         self.screen.blit(self.image, self.rect)
+
