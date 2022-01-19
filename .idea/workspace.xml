@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.1&#10;&#10;added:&#10;- Main window&#10;- score&#10;- Button witch adds score&#10;- saving score when closing&#10;- reset button (Debug)">
-      <change afterPath="$PROJECT_DIR$/Screenshot_607.png" afterDir="false" />
+    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)">
+      <change afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprites/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprites/character.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprites/leave.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/button.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controls.py" beforeDir="false" afterPath="$PROJECT_DIR$/controls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/counts.py" beforeDir="false" afterPath="$PROJECT_DIR$/counts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainbutton.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainbutton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/score.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/cart.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641814445708</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)">
+      <created>1642094759257</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1642094759257</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pre_prototype_ver_0.1&#10;&#10;added:&#10;- Main window&#10;- score&#10;- Button witch adds score&#10;- saving score when closing&#10;- reset button (Debug)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.1&#10;&#10;added:&#10;- Main window&#10;- score&#10;- Button witch adds score&#10;- saving score when closing&#10;- reset button (Debug)" />
+    <MESSAGE value="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)" />
   </component>
 </project>
