@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)">
-      <change afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/character.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sprites/leave.png" afterDir="false" />
+    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна">
+      <change afterPath="$PROJECT_DIR$/price.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sprites/clicksplusone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/button.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controls.py" beforeDir="false" afterPath="$PROJECT_DIR$/controls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/counts.py" beforeDir="false" afterPath="$PROJECT_DIR$/counts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/score.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/scores.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprites/cart.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642094759257</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна">
+      <created>1642583714056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642583714056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pre_prototype_ver_0.1&#10;&#10;added:&#10;- Main window&#10;- score&#10;- Button witch adds score&#10;- saving score when closing&#10;- reset button (Debug)" />
     <MESSAGE value="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)" />
+    <MESSAGE value="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна" />
   </component>
 </project>

@@ -7,6 +7,9 @@ class Stats():
         with open("score.txt", "r") as f:
             self.score = int(f.readline())
 
+        with open("clickDegree.txt", "r") as f:
+            self.deg = int(f.readline())
+
         self.maingame = True
         self.shop = False
 

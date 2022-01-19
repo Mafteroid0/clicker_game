@@ -21,19 +21,19 @@ class Player():
 
     def update_player(self):
         """обновление позиции пушки"""
-        if self.move_right:
+        if self.move_right and self.center_x < self.screen_rect.right:
             self.center_x += 0.7
 
 
-        elif self.move_left:
+        elif self.move_left and self.center_x > self.screen_rect.left:
             self.center_x -= 0.7
 
 
-        elif self.move_up:
+        elif self.move_up and self.center_y > self.screen_rect.top:
             self.center_y -= 0.7
 
 
-        elif self.move_down:
+        elif self.move_down and self.center_y < self.screen_rect.bottom:
             self.center_y += 0.7
 
 

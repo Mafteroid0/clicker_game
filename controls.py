@@ -3,7 +3,7 @@ import sys
 import time
 
 
-def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player):
+def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player, price_plus_click):
     """Обработчик событий"""
     for event in pygame.event.get():  # получение всех событий (действий) пользователя
         if event.type == pygame.QUIT:  # если пользователь закрыл игру (нажал на крестик)
@@ -13,10 +13,11 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player)
             mouse_pos = event.pos  # gets mouse position
 
             # checks if mouse position is over the button
+            print(mouse_pos)
 
             if mainbutton.rect.collidepoint(mouse_pos) and stats.maingame:
                 # prints current location of mouse
-                stats.score += 1
+                stats.score += stats.deg
                 with open("score.txt", "w") as f:
                     f.write(str(stats.score))
 
@@ -41,12 +42,14 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player)
                 stats.shop = False
 
             elif tovar.rect.collidepoint(mouse_pos):
-                if stats.score >= 20 and stats.shop:
-                    stats.score -= 20
+                if stats.score >= price_plus_click.price_num and stats.shop:
+                    stats.score -= price_plus_click.price_num
+                    stats.deg += 1
+                    price_plus_click.price_num *= 2
                     scores.img_score()
                     scores.show_score()
-                stats.maingame = True
-                stats.shop = False
+                    price_plus_click.img_price()
+                    price_plus_click.show_price()
 
         elif event.type == pygame.KEYDOWN:
 
@@ -76,19 +79,21 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player)
 
 
 
-def update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color):
+def update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color, price_plus_click):
     """Обновление экрана"""
-    scores.show_score()
     if stats.maingame:
         screen.fill(bg_color)
         mainbutton.draw()
         reset.draw()
         cart.draw()
         player.draw()
+        scores.show_score()
     elif stats.shop:
         screen.fill(shop_bg_color)
         tovar.draw()
         leave.draw()
+        price_plus_click.show_price()
+        scores.show_score()
     pygame.display.flip()
 
 

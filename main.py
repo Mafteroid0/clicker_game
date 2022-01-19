@@ -5,6 +5,7 @@ import controls
 from mainbutton import MainButton
 from scores import Scores
 from player import Player
+from price import Price
 
 def run():
     pygame.init()
@@ -17,15 +18,16 @@ def run():
     reset = MainButton(screen, "sprites/reset.png", 590, 740)
     cart = MainButton(screen, "sprites/cart.png", 0, 0)
     leave = MainButton(screen, "sprites/leave.png", 0, 0)
-    tovar = MainButton(screen, "sprites/tovar.png", 300, 400)
+    tovar = MainButton(screen, "sprites/clicksplusone.png", 125, 135)
     player = Player(screen, "sprites/character.png")
     stats = Stats()
+    price_plus_click = Price(screen, 20, 160, 330)
     scores = Scores(screen, stats)
 
     while True:
         player.update_player()
-        controls.events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player)
-        controls.update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color)
+        controls.events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player, price_plus_click)
+        controls.update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color, price_plus_click)
 
 
 run()

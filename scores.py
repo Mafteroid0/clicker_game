@@ -13,7 +13,7 @@ class Scores():
 
     def img_score(self):
         """преобразовывает текст из счёта в изображение"""
-        self.score_image = self.font.render(f"{self.stats.score}", True, self.text_color, (5, 5, 5))
+        self.score_image = self.font.render(f"{self.stats.score}", True, self.text_color)
         self.score_rect = self.score_image.get_rect()
         self.score_rect.centerx = 595
         self.score_rect.top = 25
