@@ -8,8 +8,10 @@ class MainButton():
         self.rect = self.image.get_rect()
         self.rect.x = x
         self.rect.y = y
+        self.on = True
 
     def draw(self):
         """вывод кнопки на экран"""
-        self.screen.blit(self.image, self.rect)
+        if self.on:
+            self.screen.blit(self.image, self.rect)
 

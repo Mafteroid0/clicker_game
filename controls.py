@@ -13,9 +13,9 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
             mouse_pos = event.pos  # gets mouse position
 
             # checks if mouse position is over the button
-            print(mouse_pos)
+            # print(mouse_pos)
 
-            if mainbutton.rect.collidepoint(mouse_pos) and stats.maingame:
+            if mainbutton.rect.collidepoint(mouse_pos) and stats.maingame and mainbutton.on:
                 # prints current location of mouse
                 stats.score += stats.deg
                 with open("score.txt", "w") as f:
@@ -61,7 +61,7 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
                 player.move_up = True
             elif event.key == pygame.K_s:  # нажатая клавиша - A
                 player.move_down = True
-            player.update_player()
+            player.update_player(stats)
 
 
 
@@ -74,7 +74,7 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
                 player.move_up = False
             elif event.key == pygame.K_s:  # нажатая клавиша - A
                 player.move_down = False
-            player.update_player()
+            player.update_player(stats)
 
 
 
@@ -82,9 +82,10 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
 def update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color, price_plus_click):
     """Обновление экрана"""
     if stats.maingame:
-        screen.fill(bg_color)
-        mainbutton.draw()
-        reset.draw()
+        # stats.render_room(player)
+        screen.blit(stats.bg, stats.bg_rect)
+        if stats.current_room == 0:
+            mainbutton.draw()
         cart.draw()
         player.draw()
         scores.show_score()
