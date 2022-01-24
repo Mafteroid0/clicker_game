@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.4&#10;&#10;добавлена работа магазина&#10;добавлен новый товар &quot;плюс к кликам&quot; - при его покупки клики будут приносить больше поинтов&#10;при покупке, цена на товар возрастает в 2 раза">
-      <change afterPath="$PROJECT_DIR$/stats.py" afterDir="false" />
+    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controls.py" beforeDir="false" afterPath="$PROJECT_DIR$/controls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/counts.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainbutton.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainbutton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/score.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/character.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/character.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642590258973</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату">
+      <created>1642838639097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1642838639097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +138,7 @@
     <MESSAGE value="pre_prototype_ver_0.2&#10;&#10;added:&#10;- Shop prototype&#10;    - Main objects hide when user turns into &quot;Shop mode&quot;&#10;    - Main objects come back when user buys smth in shop (no &quot;leave from shop &quot; button rn&#10;    - When user buys smth, points (money) removes from score (20p)" />
     <MESSAGE value="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна" />
     <MESSAGE value="pre_prototype_ver_0.4&#10;&#10;добавлена работа магазина&#10;добавлен новый товар &quot;плюс к кликам&quot; - при его покупки клики будут приносить больше поинтов&#10;при покупке, цена на товар возрастает в 2 раза" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.4&#10;&#10;добавлена работа магазина&#10;добавлен новый товар &quot;плюс к кликам&quot; - при его покупки клики будут приносить больше поинтов&#10;при покупке, цена на товар возрастает в 2 раза" />
+    <MESSAGE value="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату" />
   </component>
 </project>

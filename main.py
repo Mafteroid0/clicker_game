@@ -9,6 +9,7 @@ from price import Price
 
 def run():
     pygame.init()
+    FPS = 40
     SCREEN_SIZE = (1200, 700)
     screen = pygame.display.set_mode(SCREEN_SIZE)  # размер окна
     pygame.display.set_caption("Кликер")  # заголовок окна
@@ -26,6 +27,7 @@ def run():
     stats.render_room(player, mainbutton)
 
     while True:
+        pygame.time.delay(1000 // FPS)
         player.update_player(stats)
         controls.events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player, price_plus_click)
         controls.update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color, price_plus_click)
