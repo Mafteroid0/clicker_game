@@ -3,11 +3,17 @@ import sys
 import time
 
 
-def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player, price_plus_click):
+def events(screen, mainbutton, stats, scores, cart, tovar, leave, player, robot_helper, tovar1):
     """Обработчик событий"""
     for event in pygame.event.get():  # получение всех событий (действий) пользователя
         if event.type == pygame.QUIT:  # если пользователь закрыл игру (нажал на крестик)
-            sys.exit() # окно закрывается
+            with open("score.txt", "w") as f:
+                f.write(str(stats.score))
+                f.write("\n")
+                f.write(str(stats.deg))
+                f.write("\n")
+                f.write(str(stats.robots_1))
+            sys.exit()  # окно закрывается
 
         elif event.type == pygame.MOUSEBUTTONDOWN:
             mouse_pos = event.pos  # gets mouse position
@@ -18,17 +24,6 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
             if mainbutton.rect.collidepoint(mouse_pos) and stats.maingame and mainbutton.on:
                 # prints current location of mouse
                 stats.score += stats.deg
-                with open("score.txt", "w") as f:
-                    f.write(str(stats.score))
-
-                scores.img_score()
-                scores.show_score()
-
-            elif reset.rect.collidepoint(mouse_pos):
-                # prints current location of mouse
-                stats.score = 0
-                with open("score.txt", "w") as f:
-                    f.write(str(stats.score))
 
                 scores.img_score()
                 scores.show_score()
@@ -42,14 +37,26 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
                 stats.shop = False
 
             elif tovar.rect.collidepoint(mouse_pos):
-                if stats.score >= price_plus_click.price_num and stats.shop:
-                    stats.score -= price_plus_click.price_num
+                if stats.score >= tovar.price_num and stats.shop:
+                    stats.score -= tovar.price_num
                     stats.deg += 1
-                    price_plus_click.price_num *= 2
+                    tovar.price_num *= 2
                     scores.img_score()
                     scores.show_score()
-                    price_plus_click.img_price()
-                    price_plus_click.show_price()
+                    tovar.img_price()
+                    tovar.draw()
+
+            elif tovar1.rect.collidepoint(mouse_pos):
+                if stats.score >= tovar1.price_num and stats.shop:
+                    stats.score -= tovar1.price_num
+                    stats.robots_1 += 1
+                    tovar1.price_num *= 2
+                    robot_helper.on = True
+
+                    scores.img_score()
+                    scores.show_score()
+                    tovar1.img_price()
+                    tovar1.draw()
 
         elif event.type == pygame.KEYDOWN:
 
@@ -79,7 +86,8 @@ def events(screen, mainbutton, stats, scores, reset, cart, tovar, leave, player,
 
 
 
-def update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leave, player, shop_bg_color, price_plus_click):
+
+def update(bg_color, screen, mainbutton, scores, stats, cart, tovar, leave, player, shop_bg_color, robot_helper, tovar1):
     """Обновление экрана"""
     if stats.maingame:
         # stats.render_room(player)
@@ -89,15 +97,15 @@ def update(bg_color, screen, mainbutton, scores, reset, stats, cart, tovar, leav
         cart.draw()
         player.draw()
         scores.show_score()
+        if robot_helper.on:
+            robot_helper.draw()
     elif stats.shop:
         screen.fill(shop_bg_color)
         tovar.draw()
+        tovar1.draw()
         leave.draw()
-        price_plus_click.show_price()
         scores.show_score()
     pygame.display.flip()
-
-
 
 
     pygame.display.flip()  # прорисовка

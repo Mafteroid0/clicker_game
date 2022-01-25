@@ -113,6 +113,3 @@ class Player():
     def draw(self):
         """вывод игрока на экран"""
         self.screen.blit(self.image, self.rect)
-
-
-

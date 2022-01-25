@@ -8,9 +8,10 @@ class Stats():
         self.screen = screen
         with open("score.txt", "r") as f:
             self.score = int(f.readline())
-
-        with open("clickDegree.txt", "r") as f:
             self.deg = int(f.readline())
+            if self.deg <= 0:
+                self.deg = 1
+            self.robots_1 = int(f.readline())
 
         self.maingame = True
         self.shop = False
@@ -44,7 +45,3 @@ class Stats():
         elif self.coming_pos == 5:
             player.center_x = 600
             player.center_y = 350
-
-
-
-

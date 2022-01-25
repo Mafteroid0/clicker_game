@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату">
+    <list default="true" id="f13480fe-39d6-409a-ba62-305a2de33752" name="Changes" comment="pre_prototype_ver_0.6&#10;&#10;Добавлена анимация движения главного персонажа">
+      <change afterPath="$PROJECT_DIR$/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unclickable_object.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clickDegree.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controls.py" beforeDir="false" afterPath="$PROJECT_DIR$/controls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainbutton.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainbutton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/price.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/score.txt" beforeDir="false" afterPath="$PROJECT_DIR$/score.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprites/character.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/character.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/left_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/left_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprites/walks/right_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/sprites/walks/right_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/stats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642838639097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pre_prototype_ver_0.6&#10;&#10;Добавлена анимация движения главного персонажа">
+      <created>1642998349074</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1642998349074</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +168,7 @@
     <MESSAGE value="pre_prototype_ver_0.3&#10;&#10;добавлено движение персонажа&#10;изменен вход в магазин&#10;изменен размер окна" />
     <MESSAGE value="pre_prototype_ver_0.4&#10;&#10;добавлена работа магазина&#10;добавлен новый товар &quot;плюс к кликам&quot; - при его покупки клики будут приносить больше поинтов&#10;при покупке, цена на товар возрастает в 2 раза" />
     <MESSAGE value="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.5&#10;&#10;Добавлена 1 новая комната&#10;Добавлена возможность переходить из комнаты в комнату" />
+    <MESSAGE value="pre_prototype_ver_0.6&#10;&#10;Добавлена анимация движения главного персонажа" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre_prototype_ver_0.6&#10;&#10;Добавлена анимация движения главного персонажа" />
   </component>
 </project>
